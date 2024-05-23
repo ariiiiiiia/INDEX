@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <meta name="viewpoint" content="width=device-width,initial-scale=1.0">
+        <title>div centrado</title>
+    </head>
+    <style>
+        *{box-sizing:border-box}
+        .contenedor{
+            display: flex;justify-content: space-around;height:100vh;background-color: gray;padding:5%;margin-bottom: 5%;
+        }
+        .caja{
+            width:100px;height:100px;background-color:black;color:white;padding:5px
+        }
+        .barra{
+            width:500px;height:10px
+        }
+    </style>
+    <body>
+        <div class="contenedor">
+            <h1>position static(por defecto)</h1>
+            <div class=caja style="position: static;top:50px;left:10px">static</div>
+            <div class="caja"></div>
+            <div class="caja"></div>
+        </div>
+        <div class="contenedor">
+            <h1>position relative</h1>
+            <div class=caja style="position:relative;top:50px;left:10px">relative</div>
+            <div class="caja"></div>
+            <div class="caja"></div>
+        </div>
+        <div class="contenedor">
+            <h1>position absolute</h1>
+            <div class=caja style="position:absolute;top:2000px;left:500px;background-color: black;">absoluta</div>
+            <div class="caja"></div>
+            <div class="caja"></div>
+        </div>
+        <div class="contenedor">
+            <h1>position sticky</h1>
+            <div class=caja style="position:sticky;top:50px">sticky</div>
+            <div class="caja"></div>
+            <div class="caja"></div>
+        </div>
+        <div class="contenedor">
+            <h1>position fixed</h1>
+            <div class="barra" style="position:fixed;left:300px;background-color:red"></div>
+            <div class="caja"></div>
+            <div class="caja"></div>
+        </div>
+    </body>
+</html>
